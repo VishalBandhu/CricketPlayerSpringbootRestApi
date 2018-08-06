@@ -35,7 +35,7 @@ public class CricketPlayerAPIController {
     IPlayerService playerService;
 
     @GetMapping("/players")
-    @ApiOperation(value = "get player details ")
+    @ApiOperation(value = "get player details by name")
 	@ApiResponses({ @ApiResponse(code = 200, message = "player details has been found "),
 			@ApiResponse(code = 400, message = "player details may not exist "),
 			@ApiResponse(code = 401, message = "You are not authorized to view the resource"),
