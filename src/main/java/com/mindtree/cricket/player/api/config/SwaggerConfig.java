@@ -18,7 +18,7 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.mindtree.cricket.player.api.controller"))
-                .paths(regex("/players.*"))
+               // .paths(regex("/players.*"))
                 //.paths(regex("/player/.*"))
                 .build()
                 .apiInfo(metaData());
